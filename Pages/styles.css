@@ -72,13 +72,19 @@ body {
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
 }
-
+.container-fluid.landing {
+    position: relative;
+}
 .drop-down i {
     font-size: 3rem;
     color: whitesmoke;
 }
 .drop-down {
-    margin-top: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2rem;
 }
 .nav-container a:hover {
     color: #000;
