@@ -74,6 +74,7 @@ body {
 }
 
 .drop-down i {
+    margin-top: auto;
     font-size: 3rem;
     color: whitesmoke;
 }
