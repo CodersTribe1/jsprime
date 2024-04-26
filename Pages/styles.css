@@ -78,6 +78,7 @@ body {
     color: whitesmoke;
 }
 .drop-down {
+    align-items: end;
     margin-top: auto;
 }
 .nav-container a:hover {
