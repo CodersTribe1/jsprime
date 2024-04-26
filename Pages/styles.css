@@ -38,6 +38,8 @@ body {
     color: #eae3e3;
 }
 .landing {
+    margin: 0;
+    padding: 0;
     background-image: url('/Images/landing-bg.png');
     height: 100vh;
     width: 100vw;
@@ -47,7 +49,7 @@ body {
     width: 50%;
     font-family: 'Montserrat', sans-serif;
 }
-.nav-container a {
+.nav-container a, .mobile-menu a {
     font-size: 2rem;
     text-decoration: none;
     color: whitesmoke;
@@ -85,12 +87,21 @@ footer h4 {
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
 }
-
+footer .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.mobile-menu{
+    display: none;
+}
+.burger-container{
+    display: none;
+}
 
 /* Responsiveness */
 
 /* Media Query for iPads and Tablets  */
-@media (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
     body {
         background-color: lightblue;
         width: 100vw;
@@ -119,9 +130,15 @@ footer h4 {
         width: 15rem;
     }
 
-    footer .container {
+    footer .container h4, footer .container h5{
+        font-size: 1rem;
+    }
+    footer .container p{
         text-align: center;
         font-size: 0.6rem;
+    }
+    footer .container, footer .container p{
+        padding: .2rem;
     }
 
     .drop-down i {
@@ -137,10 +154,14 @@ footer h4 {
     .pagelanding-container img{
         width: 10rem;
     }
+    .mobile-menu{
+        display: none;
+    }
+
 }
 
 /* Media query for Mobile */
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     body{
         width: 100vw;
         margin: auto;
@@ -151,8 +172,8 @@ footer h4 {
     .text-container h1{
         font-size: 3rem;
     }
-    .nav-container a{
-        font-size: 1rem;
+    .nav-container {
+        display: none;
     }
 
     .logo-container img {
@@ -166,6 +187,8 @@ footer h4 {
     footer .container p{
         text-align: center;
         font-size: 0.5rem;
+    }
+    footer .container, footer .container p{
         padding: 0.1rem;
     }
 
@@ -193,4 +216,16 @@ footer h4 {
     .pagelanding-container img{
         width: 8    rem;
     }
+    .mobile-menu{
+        display: block;
+    }
+    .mobile-menu a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .burger-container{
+        display: block;
+    }
+
+    
 }
