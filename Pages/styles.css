@@ -103,7 +103,10 @@ footer h4 {
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
 }
-footer .container{
+
+footer .footer-container{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
