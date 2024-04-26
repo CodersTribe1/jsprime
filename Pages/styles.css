@@ -74,11 +74,12 @@ body {
 }
 
 .drop-down i {
-    margin-top: auto;
     font-size: 3rem;
     color: whitesmoke;
 }
-
+.drop-down {
+    margin-top: auto;
+}
 .nav-container a:hover {
     color: #000;
     font-family: 'Montserrat', sans-serif;
