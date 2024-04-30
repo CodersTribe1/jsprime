@@ -198,6 +198,9 @@ footer .footer-container{
     .container-fluid .landing{
         background-size: cover;
     }
+    .carousel-item img{
+        height: 70%;
+    }
     .landing-container {
         flex-direction: column;
     }
