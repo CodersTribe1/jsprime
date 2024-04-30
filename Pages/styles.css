@@ -199,7 +199,7 @@ footer .footer-container{
         background-size: cover;
     }
     .carousel-item img{
-        height: 70%;
+        height: 50vh;
     }
     .landing-container {
         flex-direction: column;
